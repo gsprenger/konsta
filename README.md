@@ -1,4 +1,6 @@
-konsta
+Konsta
 ======
 
-Paste in your bank account history, teach the app to label everything and visualize your expenses.
+- Paste in your bank account history
+- Teach the app how to label recurring events and non-recurring events
+- Visualize your expenses
