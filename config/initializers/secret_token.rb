@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Konsta::Application.config.secret_key_base = '6850b3d83893ed359a80566f4e3b772fd5e03b5992d594b4d27a0d40f8e73ac7d616ccb4a6f1de5d0082849f8aa0122128b4533c61dcc5338ad016b18c5d2230'
+Konsta::Application.config.secret_key_base = 'e6a8c4eca52d601d7fb83bbee368df1ad21a6e8b66fc15e667e3a5b5dfb1f3bde9005e54be65e599806a0122046701f6c423b90fa220f902849be02f77c2e235'

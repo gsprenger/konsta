@@ -15,17 +15,13 @@
 # gem 'pg'
 #
 development:
-  adapter: sqlite3
+  adapter: postgresql
   encoding: unicode
   database: konsta_development
   pool: 5
   username: konsta
-  password:
-
-  # Connect on a TCP socket. Omitted by default since the client uses a
-  # domain socket that doesn't need configuration. Windows does not have
-  # domain sockets, so uncomment these lines.
-  #host: localhost
+  password: ponyta
+  host: localhost
 
   # The TCP port the server listens on. Defaults to 5432.
   # If your server runs on a different port number, change accordingly.
@@ -43,16 +39,16 @@ development:
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
-test:
-  adapter: sqlite3
-  encoding: unicode
-  database: konsta_test
-  pool: 5
-  username: konsta
-  password:
+#test:
+#  adapter: postgresql
+#  encoding: unicode
+#  database: konsta_test
+#  pool: 5
+#  username: konsta
+#  password:
 
 production:
-  adapter: sqlite3
+  adapter: postgresql
   encoding: unicode
   database: konsta_production
   pool: 5
