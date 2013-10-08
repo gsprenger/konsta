@@ -1,0 +1,27 @@
+# PostgreSQL. Versions 8.2 and up are supported.
+# Example version without passwords
+
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: konsta_development
+  pool: 5
+  username: konsta
+  password: 
+  host: localhost
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: konsta_test
+  pool: 5
+  username: konsta
+  password: 
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: konsta_production
+  pool: 5
+  username: konsta
+  password:
