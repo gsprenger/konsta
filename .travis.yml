@@ -1,0 +1,8 @@
+language: ruby
+rvm:
+  - 2.0.0
+  
+before_script:
+  - psql -c "CREATE USER konsta WITH SUPERUSER PASSWORD 'root';" -U postgres
+
+
