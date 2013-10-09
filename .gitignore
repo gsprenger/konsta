@@ -15,8 +15,9 @@
 /log/*.log
 /tmp
 
-# ignore db.yml for security
-config/database.yml
+# Security: no db.yml and hide .secret
+/config/database.yml
+/.secret
 
-# RubyMine crap
-.idea
+# Rubymine crap
+/.idea

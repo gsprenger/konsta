@@ -9,4 +9,20 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Konsta::Application.config.secret_key_base = 'e6a8c4eca52d601d7fb83bbee368df1ad21a6e8b66fc15e667e3a5b5dfb1f3bde9005e54be65e599806a0122046701f6c423b90fa220f902849be02f77c2e235'
+require 'securerandom'
+
+def secure_token
+  token_file = Rails.root.join('.secret')
+  if File.exist?(token_file)
+    # Use the existing token.
+    File.read(token_file).chomp
+  else
+    # Generate a new token and store it in token_file.
+    token = SecureRandom.hex(64)
+    File.write(token_file, token)
+    token
+  end
+end
+                                
+Konsta::Application.config.secret_key_base = secure_token
+
