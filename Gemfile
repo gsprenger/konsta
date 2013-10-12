@@ -12,8 +12,6 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder'
 
-gem 'bootstrap-sass', '~> 2.3.2.2'
-
 group :development, :test do
   gem 'rspec-rails'
 end
