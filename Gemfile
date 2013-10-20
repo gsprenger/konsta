@@ -5,9 +5,9 @@ gem 'rails', '4.0.0'
 gem 'pg'
 
 gem 'therubyracer', platforms: :ruby
-gem 'sass-rails'
+gem 'sass-rails', '~> 4.0.1'
 gem 'uglifier'
-gem 'coffee-rails'
+gem 'coffee-rails', '~> 4.0.1'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder'
@@ -17,7 +17,7 @@ group :development, :test do
 end
 
 group :test do
-  gem 'selenium-webdriver'
+  gem 'selenium-webdriver', '~> 2.37.0'
   gem 'capybara'
 end
 
