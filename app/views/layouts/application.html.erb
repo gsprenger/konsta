@@ -1,29 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title><%= yield(:title) %> | Konsta - Monthly accounting made easy</title>
+  <title><%= yield(:title) %> | Konsta</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+  <%= render 'layouts/shim' %>
 </head>
 <body>
-  <header class="navbar navbar-inverse" role="banner">
-    <div class="container">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="/">Konsta</a>
-      </div>
-      <nav role="navigation">
-        <ul class="nav navbar-nav">
-          <li><a href="/dashboard">Dashboard</a></li>
-          <li><a href="/settings">Settings</a></li>
-          <li><a href="/update">Update!</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  
-  <section class="container">
-    <%= yield %>
-  </section>
+  <div class="wrap">
+    <%= render "layouts/header" %>
+    
+    <section class="main container">
+      <%= yield %>
+    </section>
+  </div>
+
+  <%= render "layouts/footer" %>
 </body>
 </html>
