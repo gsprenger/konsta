@@ -1,0 +1,64 @@
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+/* Common */
+html, body {
+  font-family: AktivGrotesk-Thin, Helvetica, sans-serif;
+}
+
+h1, h2, h3, strong, a{
+  font-family: AktivGrotesk-Regular;
+}
+
+em {
+  font-family: AktivGrotesk-ThinItalic;
+}
+
+/* Login */
+.login-table {
+  display: table;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.login-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.login-container {
+  margin-left: auto;
+  margin-right: auto; 
+  width: 400px;
+  text-align: center;
+}
+
+.login-container form {
+  border: 1px solid #999;
+  border-radius: 3px;
+  background-color: #f9f9f9;
+  margin-top: 10px;
+  padding: 15px;
+}
+
+.login-container h1 {
+  font-size: 5em;
+  margin-bottom: 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
